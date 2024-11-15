@@ -18,42 +18,75 @@ public class economy : MonoBehaviour
             money = money - 160*inflationvalue;
         }
     }
-    public void infaltion()
+    public void inflation()
     {
-        if(trueDayactionnumber == 3)
-        {
+        
             inflationvalue = Random.Range(1, 3);
-        }
+        
 
     }
     private void Start()
     {
-        money = 20000;
+        inflationvalue = 1;
+        money = 0;
     }
-    public void loan()
+    public void small_loan()
     {
-        money = money * -1.1f;
+        
+        //money = money * -1.1f;
+        // add to daycounter and make it dormant 
+    }
+    public void medium_loan()
+    {
+
+        //money = money * -1.1f;
+        // add to daycounter and make it dormant 
+
+    }
+    public void large_loan()
+    {
+
+        //money = money * -1.1f;
+        // add to daycounter and make it dormant 
+    }
+    public void sms_loan()
+    {
+
     }
     public void getmoney()
     {
 
-        money = money + 2000;//*inflationvalue;// add inflation number prob int 
-        Debug.Log("moner");
+        money = money+2000*inflationvalue;// add inflation number prob int 
+        
+        Debug.Log(money) ; 
+    }
+    private void Update()
+    {
+
+        if (trueDayactionnumber == 3)
+        {
+            inflation();
+        }
+
     }
     public void Dayaction()
     {
         dayactionnumber += 1;
-        
-        if( dayactionnumber == 3 )
+
+        if (dayactionnumber == 3)
         {
             trueDayactionnumber += 1;
         }
-        if( trueDayactionnumber == 3 )
+        if (trueDayactionnumber == 3)
         {
+            small_loan();
+            medium_loan();
+            large_loan();
+            sms_loan(); 
             //switch to diffrent day for of main room!!!
         }
-        
-    }
-    
 
+
+
+    }
 }

@@ -9,6 +9,7 @@ public class economy : MonoBehaviour
     public int dayactionnumber;
     public int trueDayactionnumber;
     public int inflationvalue;
+    public int foodvalue;
 
 
     public void productcost()
@@ -30,6 +31,7 @@ public class economy : MonoBehaviour
         inflationvalue = 1;
         money = 0;
     }
+    
     public void small_loan()
     {
         
@@ -88,5 +90,12 @@ public class economy : MonoBehaviour
 
 
 
+    }
+    public void hospital()
+    {
+        if(foodvalue==0)
+        {
+            //to hosptial!!!!!
+        }
     }
 }

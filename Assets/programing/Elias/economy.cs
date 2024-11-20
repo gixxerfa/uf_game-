@@ -14,10 +14,10 @@ public class economy : MonoBehaviour
 
     public void productcost()
     {
-       if( tag == ("_Carrot"))
-        {
+       //if( tag == ("_Carrot"))
+        
             money = money - 160*inflationvalue;
-        }
+        
     }
     public void inflation()
     {
@@ -34,7 +34,7 @@ public class economy : MonoBehaviour
     
     public void small_loan()
     {
-        
+        money = money + 4000*inflationvalue;
         //money = money * -1.1f;
         // add to daycounter and make it dormant 
     }
@@ -95,7 +95,7 @@ public class economy : MonoBehaviour
     {
         if(foodvalue==0)
         {
-            //to hosptial!!!!!
+            //add camera switch to hosptial scene!!!!!
         }
     }
 }

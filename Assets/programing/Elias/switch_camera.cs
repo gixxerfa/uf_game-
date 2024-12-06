@@ -13,11 +13,12 @@ public class switch_camera : MonoBehaviour
     public GameObject Camera7;
     public GameObject Camera8;
     public int Manager;
+    public GameObject doggy;
 
     
     public void ChangeCamera()
     {
-        GetComponent<Animator>().SetTrigger("change");
+        GetComponent<Animator>().SetTrigger("Change");
     }
     
     
@@ -34,16 +35,37 @@ public class switch_camera : MonoBehaviour
             Manager = 0;
         }
     }
+   
+    private void Update()
+    {
+        //if(Input.GetMouseButton(0))
+        {
+            dog();
+        }
+    }
 
 
-    void Cam_1()
+    public void Cam_1()
     {
         Camera1.SetActive(true);
         Camera2.SetActive(false);
+        Camera3.SetActive(false);
     }
-    void Cam_2()
+    public void Cam_2()
     {
         Camera1.SetActive(false);
         Camera2.SetActive(true);
+        Camera3.SetActive(false);
+    }
+   public void Cam_3()
+    {
+        Camera1.SetActive(false);
+        Camera2.SetActive(false);
+        Camera3.SetActive(true);
+    }
+    public void dog()
+    {
+        //Camera1.transform.position =doggy.transform.position;
+        //GetComponent<Animator>().SetTrigger("Change");
     }
 }

@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class economy : MonoBehaviour
     public int trueDayactionnumber;
     public int inflationvalue;
     public int foodvalue;
+    public bool LOANING;
+    public float sl, ml, ll, sms;
 
 
     public void productcost()
@@ -34,7 +37,13 @@ public class economy : MonoBehaviour
     
     public void small_loan()
     {
-        money = money + 4000*inflationvalue;
+        
+        
+        if (LOANING == true)
+        {
+            money = money - sl * inflationvalue;
+        }
+
         //money = money * -1.1f;
         // add to daycounter and make it dormant 
     }
@@ -64,7 +73,8 @@ public class economy : MonoBehaviour
     }
     private void Update()
     {
-
+        
+        
         if (trueDayactionnumber == 3)
         {
             inflation();
@@ -88,14 +98,20 @@ public class economy : MonoBehaviour
             //switch to diffrent day for of main room!!!
         }
 
-
+        
 
     }
     public void hospital()
     {
         if(foodvalue==0)
         {
+            //GetComponent<Animator>().setTrigger("hospital");
             //add camera switch to hosptial scene!!!!!
         }
+    }
+    public void slb()
+    {
+        LOANING = true;
+        money = money + 4000 * inflationvalue;
     }
 }

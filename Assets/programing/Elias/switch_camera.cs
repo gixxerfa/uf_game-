@@ -14,7 +14,8 @@ public class switch_camera : MonoBehaviour
     public GameObject Camera8;
     public int Manager;
     public GameObject doggy;
-
+    public int food;
+    
     
     public void ChangeCamera()
     {
@@ -35,12 +36,11 @@ public class switch_camera : MonoBehaviour
             Manager = 0;
         }
     }
-   
-    private void Update()
+    public void Update()
     {
-        //if(Input.GetMouseButton(0))
+        if(food == 0)
         {
-            dog();
+            Cam_4();
         }
     }
 
@@ -63,6 +63,14 @@ public class switch_camera : MonoBehaviour
         Camera2.SetActive(false);
         Camera3.SetActive(true);
     }
+    public void Cam_4()
+    {
+        Camera1.SetActive(false);
+        Camera2.SetActive(false);
+        Camera3.SetActive(false);
+        Camera4.SetActive(true);
+    }
+
     public void dog()
     {
         //Camera1.transform.position =doggy.transform.position;

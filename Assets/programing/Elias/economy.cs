@@ -38,6 +38,7 @@ public class economy : MonoBehaviour
         money = 0;
     }
     
+
     public void small_loan()
     { 
         SL = true;   
@@ -80,6 +81,10 @@ public class economy : MonoBehaviour
         if (trueDayactionnumber == 3)
         {
             inflation();
+        }
+        if (loancounter == 0 && SL == true)
+        {
+            SL = false;
         }
 
     }

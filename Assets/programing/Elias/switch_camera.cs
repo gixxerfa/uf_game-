@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class switch_camera : economy
 {
+    //public GameObject[] Camera1 = new GameObject[8];
     public GameObject Camera1;
     public GameObject Camera2;
     public GameObject Camera3;

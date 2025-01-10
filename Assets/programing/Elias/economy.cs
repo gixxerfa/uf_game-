@@ -86,7 +86,14 @@ public class economy : MonoBehaviour
         {
             SL = false;
         }
-
+        if (loancounter == 0 && ML == true)
+        {
+            ML = false;
+        }
+        if (loancounter == 0 && LL == true)
+        {
+            LL = false;
+        }
     }
     public void Dayaction()
     {
@@ -106,10 +113,7 @@ public class economy : MonoBehaviour
                 money = money * 0.98f;
                 loancounter = loancounter - 1;
             }
-            if(loancounter == 0)
-            {
-                SL = false;
-            }
+            
             if (ML == true)
             {
                 money = money * 0.95f;

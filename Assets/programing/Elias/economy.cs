@@ -94,6 +94,21 @@ public class economy : MonoBehaviour
         {
             LL = false;
         }
+
+
+        if(trueDayactionnumber == 1)
+        {
+            // make main room/ if have time all rooms first variation based on time.
+
+        }
+        if (trueDayactionnumber == 2)
+        {
+            // make main room/ if have time all rooms 2 variation based on time.
+        }
+        if (trueDayactionnumber == 3)
+        {
+            // make main room/ if have time all rooms third variation based on time.
+        }
     }
     public void Dayaction()
     {
@@ -140,7 +155,7 @@ public class economy : MonoBehaviour
                 SMS = false;
             }
             //switch to diffrent day for of main room!!!
-            trueDayactionnumber = 0;    
+            trueDayactionnumber = 1;    
         }
 
         

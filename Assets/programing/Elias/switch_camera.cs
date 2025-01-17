@@ -6,14 +6,8 @@ using UnityEngine;
 public class switch_camera : economy
 {
     //public GameObject[] Camera1 = new GameObject[8];
-    public GameObject Camera1;
-    public GameObject Camera2;
-    public GameObject Camera3;
-    public GameObject Camera4;
-    public GameObject Camera5;
-    public GameObject Camera6;
-    public GameObject Camera7;
-    public GameObject Camera8;
+    public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6;
+    
     public int Manager;
     public GameObject doggy;
     public int food, stupidcameranumber;

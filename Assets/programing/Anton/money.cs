@@ -20,7 +20,7 @@ public class money : MonoBehaviour
     public void AddMoney(int amount)
     {
         
-        playerMoney += 200;
+        playerMoney += amount;
     }
 
     public void SubtractMoney(int amount)

@@ -16,15 +16,15 @@ public class money : MonoBehaviour
         moneyText.text = playerMoney.ToString();
     }
 
-    // Example method to modify player's money
+    // grab this for when the job function is being done and then asign the amount :)
     public void AddMoney(int amount)
     {
         
         playerMoney += 200;
     }
-
+    // now grab these from another script and make them do different things depending on the button :)
     public void SubtractMoney(int amount)
-    {   // temporary fixes :)
+    {   
         playerMoney -= amount;
     }
 }

@@ -6,8 +6,7 @@ using UnityEngine;
 public class switch_camera : economy
 {
     //public GameObject[] Camera1 = new GameObject[8];
-    public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6;
-    
+    public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6; 
     public int Manager;
     public GameObject doggy;
     public int food, stupidcameranumber;
@@ -17,22 +16,9 @@ public class switch_camera : economy
     {
         GetComponent<Animator>().SetTrigger("Change");
     }
-    
-    
-    public void ManageCamera()
-    {
-        if (Manager == 0)
-        {
-            Cam_2();
-            Manager = 1;
-        }
-        else
-        {
-            Cam_1();
-            Manager = 0;
-        }
-    }
-    public void Start()
+
+
+public void Start()
     {
         food = 10;
         stupidcameranumber = 0;

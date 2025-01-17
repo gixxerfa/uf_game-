@@ -94,6 +94,10 @@ public class economy : MonoBehaviour
         {
             LL = false;
         }
+        if(loancounter == 0 && SMS == true)
+        {  
+            SMS = false; 
+        }
 
 
         if(trueDayactionnumber == 1)
@@ -134,26 +138,17 @@ public class economy : MonoBehaviour
                 money = money * 0.95f;
 
             }
-            if (loancounter == 0)
-            {
-                ML = false;
-            }
+            
             if (LL == true)
             {
                 money = money * 0.92f;
             }
-            if (loancounter == 0)
-            {
-                LL = false;
-            }
+           
             if (SMS == true)
             {
                 money = money * 0.89f;
             }
-            if (loancounter == 0)
-            {
-                SMS = false;
-            }
+           
             //switch to diffrent day for of main room!!!
             trueDayactionnumber = 1;    
         }

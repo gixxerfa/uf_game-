@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6866d8d1ffeef94f86fa2d9690a3fc7
+guid: adf5560662761824eba2fe96af0b9872
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Medodica
+  - Manaspace
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

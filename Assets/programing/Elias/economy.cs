@@ -112,6 +112,8 @@ public class economy : MonoBehaviour
         {
             // make main room/ if have time all rooms third variation based on time.
         }
+
+       
     }
     public void Dayaction()
     {

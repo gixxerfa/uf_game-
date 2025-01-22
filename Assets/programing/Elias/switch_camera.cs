@@ -6,7 +6,7 @@ using UnityEngine;
 public class switch_camera : economy
 {
     //public GameObject[] Camera1 = new GameObject[7];
-    public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6, Camera7; 
+    public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6, Camera7, Camera8; 
     public int Manager;
     public GameObject doggy;
     public int food, stupidcameranumber;
@@ -45,6 +45,10 @@ public void Start()
             }
             stupidcameranumber = +1;
         }
+        if (money < 0)
+        {
+
+        }
     }
 
 
@@ -57,6 +61,7 @@ public void Start()
         Camera5.SetActive(false);
         Camera6.SetActive(false);
         Camera7.SetActive(false);
+        Camera8.SetActive(false);
     }
     public void Cam_2()
     {
@@ -67,6 +72,7 @@ public void Start()
         Camera5.SetActive(false);
         Camera6.SetActive(false);
         Camera7.SetActive(false);
+        Camera8.SetActive(false);
     }
    public void Cam_3()
     {
@@ -77,6 +83,7 @@ public void Start()
         Camera5.SetActive(false);
         Camera6.SetActive(false);
         Camera7.SetActive(false);
+        Camera8.SetActive(false);
     }
     public void Cam_4()
     {
@@ -87,6 +94,7 @@ public void Start()
         Camera5.SetActive(false);
         Camera6.SetActive(false);
         Camera7.SetActive(false);
+        Camera8.SetActive(false);
     }
     public void Cam_5()
     {
@@ -97,6 +105,7 @@ public void Start()
         Camera5.SetActive(true);
         Camera6.SetActive(false);
         Camera7.SetActive(false);
+        Camera8.SetActive(false);
     }
     public void Cam_6()
     {
@@ -107,6 +116,7 @@ public void Start()
         Camera5.SetActive(false);
         Camera6.SetActive(true);
         Camera7.SetActive(false);
+        Camera8.SetActive(false);
     }
     public void Cam_7()
     {
@@ -117,6 +127,18 @@ public void Start()
         Camera5.SetActive(false);
         Camera6.SetActive(false);
         Camera7.SetActive(true);
+        Camera8.SetActive(false);
+    }
+    public void Cam_8()
+    {
+        Camera1.SetActive(false);
+        Camera2.SetActive(false);
+        Camera3.SetActive(false);
+        Camera4.SetActive(false);
+        Camera5.SetActive(false);
+        Camera6.SetActive(false);
+        Camera7.SetActive(false);
+        Camera8.SetActive(true);
     }
 
     public void dog()

@@ -47,7 +47,7 @@ public void Start()
         }
         if (money < 0)
         {
-
+            Cam_8();
         }
     }
 

@@ -554,17 +554,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a849af128453e54b8032949f886bd26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: 0
+  dayactionnumber: 0
+  trueDayactionnumber: 0
+  inflationvalue: 0
+  foodvalue: 0
+  loancounter: 0
+  SL: 0
+  ML: 0
+  LL: 0
+  SMS: 0
+  LOANING: 0
+  sl: 0
+  ml: 0
+  ll: 0
+  sms: 0
   Camera1: {fileID: 2045547740}
   Camera2: {fileID: 1061983282}
   Camera3: {fileID: 1957236350}
   Camera4: {fileID: 1774960064}
   Camera5: {fileID: 0}
   Camera6: {fileID: 0}
-  Camera7: {fileID: 0}
-  Camera8: {fileID: 0}
   Manager: 0
   doggy: {fileID: 0}
   food: 0
+  stupidcameranumber: 0
 --- !u!1 &1120073481
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,10 +613,12 @@ MonoBehaviour:
   trueDayactionnumber: 0
   inflationvalue: 0
   foodvalue: 0
+  loancounter: 0
   SL: 0
   ML: 0
   LL: 0
   SMS: 0
+  LOANING: 0
   sl: 0
   ml: 0
   ll: 0
@@ -1039,7 +1055,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2045547744}
         m_TargetAssemblyTypeName: switch_camera, Assembly-CSharp
-        m_MethodName: ManageCamera
+        m_MethodName: Cam_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1297,17 +1313,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a849af128453e54b8032949f886bd26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: 0
+  dayactionnumber: 0
+  trueDayactionnumber: 0
+  inflationvalue: 0
+  foodvalue: 0
+  loancounter: 0
+  SL: 0
+  ML: 0
+  LL: 0
+  SMS: 0
+  LOANING: 0
+  sl: 0
+  ml: 0
+  ll: 0
+  sms: 0
   Camera1: {fileID: 2045547740}
   Camera2: {fileID: 1061983282}
   Camera3: {fileID: 1957236350}
   Camera4: {fileID: 1774960064}
   Camera5: {fileID: 0}
   Camera6: {fileID: 0}
-  Camera7: {fileID: 0}
-  Camera8: {fileID: 0}
   Manager: 0
   doggy: {fileID: 0}
   food: 0
+  stupidcameranumber: 0
 --- !u!1 &2038741636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,17 +1577,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a849af128453e54b8032949f886bd26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: 0
+  dayactionnumber: 0
+  trueDayactionnumber: 0
+  inflationvalue: 0
+  foodvalue: 0
+  loancounter: 0
+  SL: 0
+  ML: 0
+  LL: 0
+  SMS: 0
+  LOANING: 0
+  sl: 0
+  ml: 0
+  ll: 0
+  sms: 0
   Camera1: {fileID: 2045547740}
   Camera2: {fileID: 1061983282}
   Camera3: {fileID: 1957236350}
   Camera4: {fileID: 1774960064}
   Camera5: {fileID: 0}
   Camera6: {fileID: 0}
-  Camera7: {fileID: 0}
-  Camera8: {fileID: 0}
   Manager: 0
   doggy: {fileID: 1774960064}
   food: 0
+  stupidcameranumber: 0
 --- !u!95 &2045547745
 Animator:
   serializedVersion: 5

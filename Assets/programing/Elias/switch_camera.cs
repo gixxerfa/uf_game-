@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class switch_camera : economy
 {
-    //public GameObject[] Camera1 = new GameObject[7];
+    public GameObject[] Cameralist = new GameObject[7];
     public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6, Camera7, Camera8; 
     public int Manager;
     public GameObject doggy;
@@ -17,11 +17,20 @@ public class switch_camera : economy
         GetComponent<Animator>().SetTrigger("Change");
     }
 
+    public void cc(int Camera)
+    {
+        for (int i = 0; i < Cameralist.Length; i++) { 
+            Cameralist[i].gameObject.SetActive(false);
+        }
+        Cameralist[Camera].SetActive(true);
+
+    }
 
 public void Start()
     {
         food = 10;
         stupidcameranumber = 0;
+        cc(2);
     }
     public void Update()
     {

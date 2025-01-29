@@ -10,18 +10,25 @@ public class economy : MonoBehaviour
     public int dayactionnumber;
     public int trueDayactionnumber;
     public int inflationvalue;
-    public int foodvalue, loancounter;
+    public int foodvalue = 10, loancounter;
     public bool SL,ML,LL,SMS, LOANING;
     public float sl, ml, ll, sms;
 
 
-    public void productcost()
+    public void smallcost()
     {
-       //if( tag == ("_Carrot"))
-
-        
             money = money - 160*inflationvalue;
-        
+        foodvalue = foodvalue + 3;
+    }
+    public void mediumcost()
+    {
+        money = money - 200 * inflationvalue;
+        foodvalue = foodvalue + 5;
+    }
+    public void bigcost()
+    {
+        money = money - 250 * inflationvalue;
+        foodvalue = foodvalue + 10;
     }
     public void inflation()
     {
@@ -35,6 +42,7 @@ public class economy : MonoBehaviour
         loancounter = 3;
         inflationvalue = 1;
         money = 0;
+        foodvalue = foodvalue -5 ;
     }
     
 

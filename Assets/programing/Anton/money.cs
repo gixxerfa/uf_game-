@@ -10,7 +10,7 @@ public class money : MonoBehaviour
     private int playerMoney = 1000;    // Example starting money
 
 
-
+    // probably written by chatgpt
     private void Update()
     {
         moneyText.text = playerMoney.ToString();

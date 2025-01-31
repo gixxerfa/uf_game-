@@ -130,7 +130,8 @@ public class economy : MonoBehaviour
         if (dayactionnumber == 3)
         {
             trueDayactionnumber += 1;
-            dayactionnumber = 0;    
+            dayactionnumber = 0;
+            foodvalue = foodvalue - 4;
         }
         if (trueDayactionnumber == 3)
         {

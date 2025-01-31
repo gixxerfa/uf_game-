@@ -14,6 +14,6 @@ public class LoanManager : MonoBehaviour
 
     void TakeLoan(int amount)
     {
-
+        
     }
 }

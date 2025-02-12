@@ -17,7 +17,10 @@ public class Cameracontroll : MonoBehaviour
         {
             Cameralist[i].gameObject.SetActive(false);
         }
-        
+        for (int i = 0; i < Canvaslist.Length; i++)
+        {
+            Canvaslist[i].gameObject.SetActive(false);
+        }
         Cameralist[Camera].SetActive(true);
         Canvaslist[Camera].SetActive(true);
     }

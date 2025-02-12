@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class switch_camera : economy
 {
+    // values all of them
     public GameObject[] Cameralist = new GameObject[7];
     public GameObject Camera1, Camera2, Camera3, Camera4, Camera5, Camera6, Camera7, Camera8; 
     public int Manager;
@@ -12,12 +13,12 @@ public class switch_camera : economy
     public int food, stupidcameranumber;
     
     
-    public void ChangeCamera()
+    public void ChangeCamera() // the animation for when the camera changes that is for now broken due to unity stuff
     {
         GetComponent<Animator>().SetTrigger("Change");
     }
 
-    public void cc(int Camera)
+    public void cc(int Camera)// isak cool better than me camera code 
     {
         for (int i = 0; i < Cameralist.Length; i++) { 
             Cameralist[i].gameObject.SetActive(false);
@@ -26,7 +27,7 @@ public class switch_camera : economy
 
     }
 
-public void Start()
+public void Start() // value specifiks 
     {
         food = 10;
         stupidcameranumber = 0;
@@ -34,11 +35,11 @@ public void Start()
     }
     public void Update()
     {
-        if (food == 0)
+        if (food == 0)// hospital cam 
         {
             Cam_4();
         }
-        if (stupidcameranumber > 1)
+        if (stupidcameranumber > 1)//test for stuff i thnk day change 
         {
             Debug.Log("camera_dog");
             //Cam_6();
@@ -54,13 +55,13 @@ public void Start()
             }
             stupidcameranumber = +1;
         }
-        if (money < 0)
+        if (money < 0) // bankrupt end
         {
             Cam_8();
         }
     }
 
-
+    // all of the bad and old way to controll the camera.
     public void Cam_1()
     {
         Camera1.SetActive(true);
@@ -150,6 +151,7 @@ public void Start()
         Camera8.SetActive(true);
     }
 
+    // more test functions with stuff idon't remember in them 
     public void dog()
     {
         

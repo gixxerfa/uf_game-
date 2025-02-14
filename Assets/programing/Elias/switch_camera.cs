@@ -38,7 +38,7 @@ public void Start() // value specifiks
     {
         food = 10;
         stupidcameranumber = 0;
-        cc(2);
+        cc(0);
     }
     private void Update()
     {
@@ -74,7 +74,7 @@ public void Start() // value specifiks
     // more test functions with stuff idon't remember in them 
     public void dog()
     {
-        
+        cc(1);
 
         //Camera1.transform.position =doggy.transform.position;
         //GetComponent<Animator>().SetTrigger("Change");

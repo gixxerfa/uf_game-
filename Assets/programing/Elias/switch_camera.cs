@@ -18,6 +18,7 @@ public class switch_camera : economy
         GetComponent<Animator>().SetTrigger("Change");
     }
 
+    
     public void cc(int Camera)// isak cool better than me camera code 
     {
         for (int i = 0; i < Cameralist.Length; i++) { 

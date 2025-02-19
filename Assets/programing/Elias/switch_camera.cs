@@ -79,6 +79,13 @@ public void Start() // value specifiks
         //Camera1.transform.position =doggy.transform.position;
         //GetComponent<Animator>().SetTrigger("Change");
     }
+    public void dog_2()
+    {
+        cc(0);
+
+        //Camera1.transform.position =doggy.transform.position;
+        //GetComponent<Animator>().SetTrigger("Change");
+    }
     public void dag_uppies(int day_number_uppies) 
     {
         if (dayactionnumber == 3)

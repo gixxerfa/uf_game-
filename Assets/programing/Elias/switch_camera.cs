@@ -79,17 +79,19 @@ public void Start() // value specifiks
         //Camera1.transform.position =doggy.transform.position;
         //GetComponent<Animator>().SetTrigger("Change");
     }
-    public void dog_2()
+    public void dag_uppies(int day_number_uppies) 
     {
-        //if (trueDayactionnumber == 3)
+        if (dayactionnumber == 3)
         {
+            trueDayactionnumber += 1;
+            dayactionnumber = day_number_uppies;
 
-            if (stupidcameranumber == 0)
-            {
-                print("cam5");
-                //Cam_5();
-            }
-            stupidcameranumber = stupidcameranumber +1;
         }
+        // NOT WORK ______________________________________________________
+        else
+        {
+            dayactionnumber += day_number_uppies;
+        }
+
     }
 }

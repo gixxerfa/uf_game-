@@ -8,11 +8,11 @@ public class tooltip : MonoBehaviour
 
     public void onmouseenter()
     {
-
+        buttons_details_hover._instance.SetAndshowtooltip(message);
     }
     public void onmousexit() 
     {
-    
+    buttons_details_hover._instance.hidetooltip();
     
     }
 }

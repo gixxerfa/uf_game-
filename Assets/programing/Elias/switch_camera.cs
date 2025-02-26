@@ -81,7 +81,7 @@ public void Start() // value specifiks
     }
     public void dog_2()
     {
-        cc(0);
+        cc(3);
 
         //Camera1.transform.position =doggy.transform.position;
         //GetComponent<Animator>().SetTrigger("Change");

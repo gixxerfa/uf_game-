@@ -7,6 +7,7 @@ public class buttons_details_hover : MonoBehaviour
 {
     public static buttons_details_hover _instance;
     public TextMeshProUGUI textComponent;
+    public GameObject gg;
     // Start is called before the first frame update
 
     private void Awake()
@@ -23,12 +24,14 @@ public class buttons_details_hover : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
+        gg.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = Input.mousePosition;
+        
     }
     public void SetAndshowtooltip(string message)
     {

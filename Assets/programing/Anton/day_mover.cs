@@ -30,7 +30,8 @@ public class day_mover : MonoBehaviour
         // make a way to end the game
     }
 
-    //improve
+    
+    //improve 
     void event_managment(int event_type)
     {
         if (event_type == 1)

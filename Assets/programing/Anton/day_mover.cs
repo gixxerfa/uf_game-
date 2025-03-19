@@ -1,14 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class day_mover : MonoBehaviour
 {
     int daynumber, dayaction;
+    public Image img;
     // improve
+
+    private void Update()
+    {
+        
+    }
     void day_change()
     {
-        if (daynumber != 3)
+        if (daynumber == 54)
+        {
+            endgame("end_scene");
+        }
+        else if (dayaction != 3)
         {   dayaction += 1;
             print(dayaction);
             print(daynumber);
@@ -19,15 +31,11 @@ public class day_mover : MonoBehaviour
             print(dayaction);
             print(daynumber);
         }
-        else if (daynumber == 54)
-        {   
-            endgame();
-        }
     }
     // improve
-    void endgame()
+    void endgame(string scene_name)
     {
-        // make a way to end the game
+        SceneManager.LoadScene(scene_name);
     }
 
     

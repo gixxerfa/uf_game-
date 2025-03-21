@@ -8,7 +8,6 @@ public class day_mover : MonoBehaviour
 {
     int daynumber, dayaction;
     public Image img;
-    // improve
 
     private void Update()
     {

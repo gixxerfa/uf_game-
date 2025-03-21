@@ -18,6 +18,7 @@ public class stats_manager : MonoBehaviour
     }
     private void Update()
     {
+        food_changer();
         // functioning food display i think food just does nothing :)
         if (current_food == 4)
             {
@@ -36,6 +37,15 @@ public class stats_manager : MonoBehaviour
                 img.sprite = h1;
             }
 
+    }
+
+
+   public void food_changer()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            current_food -= 1;
+        }
     }
 
 

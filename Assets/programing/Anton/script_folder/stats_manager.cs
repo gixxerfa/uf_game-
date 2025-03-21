@@ -37,15 +37,21 @@ public class stats_manager : MonoBehaviour
                 img.sprite = h1;
             }
 
+        if (current_food == 0)
+        {
+            // change camera to hospital room :)
+        }
+
     }
 
 
-   public void food_changer()
+    public void food_changer()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
             current_food -= 1;
         }
+        
     }
 
 

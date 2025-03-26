@@ -171,7 +171,7 @@ public class economy : MonoBehaviour
     // my two test voids to test buttons with code i don't want or is to changed to be put into the live code.
     public void test()
     {
-       
+        print("make food");
     }
     public void test_2()
     {

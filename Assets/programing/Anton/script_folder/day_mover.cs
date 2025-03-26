@@ -13,7 +13,7 @@ public class day_mover : MonoBehaviour
     {
         
     }
-    void day_change()
+    public void day_change()
     {
         if (daynumber == 54)
         {

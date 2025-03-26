@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class scenechanger : MonoBehaviour
 {
 
-    void scene(string scenename)
+   public void scene(string scenename)
     {
         SceneManager.LoadScene(scenename);
     }
@@ -15,5 +15,10 @@ public class scenechanger : MonoBehaviour
     {
         Application.Quit();
         print("quited");
+    }
+
+    public void start_game()
+    {
+        SceneManager.LoadScene("Game1");
     }
 }
